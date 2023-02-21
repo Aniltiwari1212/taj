@@ -1,0 +1,174 @@
+body {
+	margin: 0;
+	background: rgb(255, 255, 255);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.Navbar {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #f04040e1;
+  border: solid rgb(35, 187, 5);
+    border-radius: 5px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.Design {
+  float: left;
+  padding: 0px 0px;
+  color:rgb(255, 255, 255);
+  
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: rgb(255, 204, 204);
+}
+
+nav a::before {
+  content: ' ';
+  display: block;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+
+.tester{
+  font-size: 15px;
+  animation: slideMe 1s ease-in;
+}
+
+.tester2{
+  font-size: 15px;
+  animation: slideMeOut 1s ease-in;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 1s linear; 
+}
+
+
+
+
+
+
+@keyframes slideMe{
+0%{
+  transform: skewX(53deg) translateX(500px);
+}
+100%{
+  transform: skew(0deg);
+}
+}
+
+@keyframes slideMeOut{
+0%{
+  transform: skewX(-53deg) translateX(-500px);
+}
+100%{
+  transform: skew(0deg);
+}
+}
+
+
+
+.hide{
+display: none;
+}
+
+.show{
+display: block!important;
+}
+
+.ta-r{
+text-align: right;
+}
+
+.ta-c{
+text-align: center;
+}
+
+.padT150{
+padding-top: 150px;
+}
+
+.padB150{
+padding-bottom:150px;
+}
+
+.button {
+width: 140px;
+height: 45px;
+font-family: 'Roboto', sans-serif;
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #000;
+background-color: #fff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+}
+
+.button.cancel-btn:hover {
+background-color: #F3270B;
+box-shadow: 0px 15px 20px rgba(243, 42, 11, 0.4);
+color: #fff;
+transform: translateY(-7px);
+}
+
+.button.accept-btn:hover {
+background-color: #0B91F3;
+box-shadow: 0px 15px 20px rgba(11, 113, 243, 0.4);
+color: #fff;
+transform: translateY(-7px);
+}
+
+
